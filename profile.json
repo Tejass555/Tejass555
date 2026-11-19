@@ -1,0 +1,17 @@
+{
+  "name": "Tejas Waghmare",
+  "role": "AZURE DATA ENGINEER",
+  "tagline": "I build data pipelines, shape reliable datasets, and turn raw data into useful insights.",
+  "location": "Pune, India",
+  "website": "github.com/Tejass555",
+  "github_username": "Tejass555",
+  "build_metric": "1",
+  "build_label": "flagship data project",
+  "build_description": "Azure retail lakehouse pipeline",
+  "brand_metric": "Azure",
+  "brand_label": "cloud data platform",
+  "brand_description": "ADF \u00b7 ADLS Gen2 \u00b7 Databricks",
+  "learn_metric": "6+",
+  "learn_label": "core technologies",
+  "learn_description": "SQL \u00b7 Python \u00b7 Spark \u00b7 Delta Lake"
+}

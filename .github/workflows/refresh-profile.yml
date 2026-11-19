@@ -1,0 +1,37 @@
+name: Refresh animated profile cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 02:15 UTC = 07:45 India time. GitHub may delay scheduled runs.
+    - cron: "15 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch contribution calendar
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_USERNAME: Tejass555
+        run: python scripts/collect_contributions.py
+      - name: Render SVG cards
+        run: python scripts/render_readme_cards.py
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cards data
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "chore: refresh profile cards"
+            git push
+          fi

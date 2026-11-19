@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="230" viewBox="0 0 380 230" role="img" aria-label="Brand"><defs><style>.sans{font-family:Arial,sans-serif}.serif{font-family:Georgia,serif}.muted{fill:#77766f}.reveal{opacity:0;animation:fadein .8s ease-out forwards}.bar{transform-box:fill-box;transform-origin:bottom;animation:grow .85s ease-out both}@keyframes fadein{to{opacity:1}}@keyframes grow{from{transform:scaleY(.03)}to{transform:scaleY(1)}}@media(prefers-reduced-motion:reduce){.motion,.reveal,.bar{animation:none!important;opacity:1!important;transform:none!important}}</style></defs>
+<rect width="380" height="230" rx="20" fill="#e92727"/>
+<text x="28" y="38" class="sans" font-size="13" letter-spacing="2" fill="#fff">BRAND</text>
+<text x="348" y="38" text-anchor="end" class="sans" font-size="20" fill="#fff">↗</text>
+<text x="28" y="116" class="serif" font-size="43" font-style="italic" fill="#fff">Azure</text>
+<text x="28" y="151" class="sans" font-size="15" font-weight="bold" fill="#fff">cloud data platform</text>
+<text x="28" y="188" class="sans" font-size="13" fill="#fff">ADF · ADLS Gen2 · Databricks</text></svg>
